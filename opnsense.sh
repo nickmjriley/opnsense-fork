@@ -2,7 +2,7 @@
 # https://github.com/opnsense/update
 #variables
 rg='opnsense'
-location='uaenorth'
+location='uksouth'
 vm_name='opnsense'
 vm_image=$(az vm image list -l $location -p thefreebsdfoundation --all --query "[?offer=='freebsd-13_1'].urn" -o tsv | sort -u | tail -n 1)
 az vm image terms accept --urn $vm_image -o none
